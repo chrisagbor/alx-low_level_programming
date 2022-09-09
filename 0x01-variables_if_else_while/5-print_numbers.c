@@ -15,10 +15,10 @@ int main(void)
 	i = 48;
 
 	while (i < 58)
-		{
-			putchar(i);
-			i++;
-		}
+	{
+		putchar(i);
+		i++;
+	}
 
 	putchar(10);
 
