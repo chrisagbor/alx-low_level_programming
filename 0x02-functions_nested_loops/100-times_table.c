@@ -5,7 +5,7 @@
  * @n: number of the times tables
  */
 
-void times_table(int n)
+void print_times_table(int n)
 {
 	int i, j, k;
 
@@ -20,7 +20,7 @@ void times_table(int n)
 				{
 					_putchar(k + '0');
 				
-				}else if (k < 10 && j != 0)
+				} else if (k < 10 && j != 0)
 
 				{
 					_putchar(',');
