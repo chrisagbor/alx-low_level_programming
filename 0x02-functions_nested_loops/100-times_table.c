@@ -5,7 +5,7 @@
  * @n: number of the times tables
  */
 
-void Print_times_table(int n)
+void Print_times_table(int n);
 {
 	int i, j, k;
 
