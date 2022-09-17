@@ -25,4 +25,6 @@ int main(void)
 			number /= inc;
 		}
 	}
+	printf("%1d\n", number);
+	return (0);
 }
