@@ -7,7 +7,7 @@
  * Return: Always 0 (Success)
  */
 
-void print_numbers(void)
+void print_numbers(int n)
 {
 	int num = 0;
 
