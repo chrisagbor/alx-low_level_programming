@@ -14,8 +14,6 @@ void print_line(int n);
 void print_diagonal(int n);
 void print_square(int size);
 void print_triangle(int size);
-void largest_prime_factor(long int num)
-double sqrt(double x)
 int _putchar(int);
 int _isupper(int);
 int _isdigit(int);
