@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 /**
-* write your line of code here...
-* Remember: You can only write one statement
-* you are not allowed to use a
-* you are not allowed to modify p
-* you are not allowed to code anything else than this line of code
+* Main - Entry point
+*
+* Description: Add one line to this code, so that the program prints a[2] = 98,
+*
+* Return: Always 0 (Success)
 */
 int main(void)
 {
