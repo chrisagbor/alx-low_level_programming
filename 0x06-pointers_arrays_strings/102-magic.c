@@ -14,10 +14,10 @@ int main(void)
 	 * - you are not allowed to use a
 	 * - you are not allowed to modify p
 	 * - only one statement needed
-	 * - you are not allowed to code anything else other than this line of code
+	 * - you are not allowed to code anything else other than this line of codes
 	*/
 	*(p + 5) = 98;
-	/* ...so that this will prints out 98\n */
+	/* ...so that this will print 98\n */
 	printf("a[2] = %d\n", a[2]);
 	return (0);
 }
