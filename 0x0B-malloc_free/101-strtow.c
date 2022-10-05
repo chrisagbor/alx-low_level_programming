@@ -63,39 +63,36 @@ char **strtow(char *str)
 	split = (char **)malloc(sizeof(char *) * (words + 1));
 
 	if (split != NULL)
+
+	for (i = 0; i <= len(str) && words; i++)
 	{
-		for (i = 0; i <= len(str) && words; i++)
+		if ((str[i] != ' ') && (str[i] != '\0'))
+			size++;
+
+		else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
 		{
-			if ((str[i] != ' ') && (str[i] != '\0'))
-				size++;
+			split[j] = (char *)malloc(sizeof(char) * size + 1);
 
-			else if (((str[i] == ' ') || (str[i] == '\0')) && i && (str[i - 1] != ' '))
+			if (split[j] != NULL)
 			{
-				split[j] = (char *)malloc(sizeof(char) * size + 1);
-
-				if (split[j] != NULL)
+				while (temp < size)
 				{
-					while (temp < size)
-					{
-						split[j][temp] = str[(i - size) + temp];
-						temp++;
-					}
-					split[j][temp] = '\0';
-					size = temp = 0;
-					j++;
+					split[j][temp] = str[(i - size) + temp];
+					temp++;
 				}
-				else
-				{
-					while (j-- >= 0)
-						free(split[j]);
-					free(split);
-					return (NULL);
-				}
+				split[j][temp] = '\0';
+				size = temp = 0;
+				j++;
+			}
+			else
+			{
+				while (j-- >= 0)
+				free(split[j]);
+				free(split);
+				return (NULL);
 			}
 		}
-		split[words] = NULL;
-		return (split);
 	}
-	else
-	return (NULL);
+	split[words] = NULL;
+	return (split);
 }
