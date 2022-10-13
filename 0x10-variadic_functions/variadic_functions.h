@@ -9,7 +9,7 @@
  * @t: print type
  * @f: print function
  */
-typdef struct print
+typedef struct print
 {
 	char *t;
 	void (*f)(va_list);
