@@ -5,7 +5,7 @@
 
 #include <stdarg.h>
 /**
- * struct print - print type with corresponding print function 
+ * struct print - print type with corresponding print function
  * @t: print type
  * @f: print function
  */
